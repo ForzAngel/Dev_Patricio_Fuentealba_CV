@@ -357,7 +357,11 @@ section {
 }
 
 .contact-grid .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 
 .contact-grid .card .icon {
@@ -365,13 +369,14 @@ section {
   margin-bottom: 10px;
 }
 
-.contact-grid .card a {
+.contact-grid .card span {
   color: var(--text-muted);
   font-size: 0.92rem;
   word-break: break-word;
+  transition: color 0.2s ease;
 }
 
-.contact-grid .card:hover a {
+.contact-grid .card:hover span {
   color: var(--violet-bright);
 }
 
